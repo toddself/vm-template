@@ -13,8 +13,8 @@ fn main() {
     match flag {
         Some(e) => 
             match e.as_str() {
-                "--link" => print!(
-                        "[{}]({}.md)",
+                "--link" | "-l" => print!(
+                        "* [{}]({}.md)",
                         now.format(DATE_FORMAT_DISPLAY),
                         now.format(DATE_FORMAT_LINK)
                     ),
