@@ -21,7 +21,7 @@ fn main() {
                 _ => print!("NOT SUPPORTED")
             }
         None => print!(
-                "# {}\n\n## TODO\n* [ ]\n\n## In Progress\n*\n\n## Done\n*\n\n## Notes\n\n[back to index](index.md)",
+                "# {}\n\n## TODO\n* [ ]\n\n## In Progress\n\n## Done\n\n## Notes\n\n[back to index](index.md)",
                 now.format(DATE_FORMAT).to_string()
             ),
 
